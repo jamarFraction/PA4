@@ -4,6 +4,7 @@
 #include <string.h>
 #include <math.h>
 #include <stdbool.h>
+#include <time.h>
 
 
 typedef struct data
@@ -35,3 +36,17 @@ void dequeue(Queue *lane);
 QueueNode *makeNode(void);
 
 bool isEmpty(Queue *lane);
+
+void printQueue(Queue lane);
+
+void initializeQueues(Queue *expressLane, Queue *normalLane);
+
+int simulationPrompt(void);
+
+int generateRandom(int maxNumber);
+
+int generateRandomNORM(void);
+
+runSimulation(Queue *expressLane, Queue *normalLane, int simulationTime);
+
+void updateWaitTimes(Queue *lane);
