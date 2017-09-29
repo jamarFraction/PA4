@@ -1,3 +1,10 @@
+/*******************************************************************************************
+* Programmer: Jamar Fraction                                                               *
+* Class: CptS 122, Fall  2017; Lab Section 05											   *
+* Programming Assignment: PA4															   *
+* Date: September 29, 2017                                                                 *
+* Description:This program fulfills the requirements for the fourth programming assignment *
+********************************************************************************************/
 #include "header.h"
 
 int main(void) {
@@ -12,7 +19,7 @@ int main(void) {
 	//initialize function
 	initializeQueues(&expressLane, &normalLane);
 
-	//one time for randoms ;>
+	//one time for randoms
 	srand(time(NULL));
 
 
