@@ -37,7 +37,7 @@ QueueNode *makeNode(void);
 
 bool isEmpty(Queue *lane);
 
-void printQueue(Queue lane);
+void printQueue(Queue *lane);
 
 void initializeQueues(Queue *expressLane, Queue *normalLane);
 
@@ -47,6 +47,10 @@ int generateRandom(int maxNumber);
 
 int generateRandomNORM(void);
 
-runSimulation(Queue *expressLane, Queue *normalLane, int simulationTime);
+void runSimulation(Queue *expressLane, Queue *normalLane, int simulationTime);
 
 void updateWaitTimes(Queue *lane);
+
+void updateWaitTimesNoTail(Queue *lane);
+
+void enqueueNORM(Queue *lane, int customerNumber);
